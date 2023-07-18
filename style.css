@@ -1,12 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 
+/* shared styling */
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    /* border: 2px solid salmon; */
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.pink-text {
+    color: #FF42A5;
+}
+
+/* nav section starts */
+.nav-container {
+    width: 100%;
+    min-height: 130px;
+    padding-top: 2rem;
+
+}
+
+.nav-menu-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.logo-name {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.link {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.about-dev {
+    display: flex;
+    width: 100%;
+    padding-right: 20px;
+    justify-content: flex-end;
+    gap: 20px;
+
+
+
+}
+
+.about-dev a {
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    justify-content: space-evenly;
+}
+
+#g-text {
+    color: #0B0223;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-dev,
+.social-links {
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* nav section ends */
+
+@media screen and (max-width:425px) {
+    
+    /* nav section responsive starts */
+    .nav-menu-container, .link, .about-dev{
+        flex-direction: column;
+    }
+    .logo-name{
+        margin: 0px 95px 50px 0px;
+    }
+    .about-dev{
+        margin-bottom: 30px;
+    }
+    /* nav section responsive ends  */
+}
