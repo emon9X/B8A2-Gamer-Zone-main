@@ -1,0 +1,112 @@
+ <!-- game category section starts-->
+    <section class="category-container">
+        <div class="category ctg1">
+            <div><img src="./images/Rectangle 11.png" alt="icon"></div>
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg2">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg3">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg4">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg5">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg6">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg7">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg8">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+        <div class="category ctg9">
+            <img src="images/Rectangle 11.png" alt="icon">
+            <p>Action Games</p>
+        </div>
+
+    </section>
+    <!-- game category section ends-->
+
+/* game category section starts */
+.category-container{
+    width: 100%;
+    min-height: 420px;
+   border: 2px solid tomato;
+   /* position: relative; */
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 15rem 0 15rem;
+   justify-content: center;
+   /* flex-grow: 0; */
+   align-content: center;
+}
+.category{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 15rem; 
+height: 5rem;
+border-radius: 3.125rem;
+background: #FFF;
+}
+.category-container img{
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.category-container p{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 1.1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+/* .ctg1, .ctg2, .ctg3, .ctg4, .ctg5{
+    position: absolute;
+    top: 7.5rem;
+}
+.ctg6, .ctg7, .ctg8, .ctg9{
+    position: absolute;
+    top: 14.18rem;
+}
+.ctg1{
+    left: 14.93rem;
+}
+.ctg2{
+    left: 31.81rem;
+}
+.ctg3{
+    left: 51.06rem;
+}
+.ctg4{
+    left: 68.68rem;
+}
+.ctg5{
+    left: 87.93rem;
+}
+.ctg6{
+    left: 20.31rem;
+}
+.ctg7{
+    left: 41.06rem;
+}
+.ctg8{
+    left: 62.68rem;
+}
+.ctg9{
+    left: 80.06em;
+} */
