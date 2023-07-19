@@ -23,6 +23,25 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.section-intro {
+    /* text-align: right; */
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-description {
+    color: #534C64;
+    /* text-align: right; */
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+    padding: 25px 0px 25px 0px;
+}
+
 .btn {
     color: #FFF;
     font-size: 20px;
@@ -31,6 +50,17 @@ body {
     line-height: normal;
     text-transform: uppercase;
     border: none;
+}
+
+.features {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* text-transform: lowercase; */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* shared styles end  */
@@ -120,7 +150,8 @@ body {
 
 }
 
-.banner-container {
+.banner-container,
+.gamer-container {
     width: 80%;
     display: flex;
     align-items: center;
@@ -152,17 +183,6 @@ body {
     line-height: normal;
 }
 
-.features {
-    color: #534C64;
-
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: lowercase;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
 
 .button-container {
     display: flex;
@@ -182,7 +202,8 @@ body {
     background: #4EC5F7;
 }
 
-.banner-image-container {
+.banner-image-container,
+.gamer-image-container {
     width: 50%;
 }
 
@@ -192,13 +213,100 @@ body {
 }
 
 /* banner section ends  */
+/* we are gamer section starts  */
+.we-gamer, .funny-container {
+    width: 100%;
+    min-height: 600px;
+    padding-top: 95px;
+}
+
+.gamer-text-container {
+    width: 50%;
+    text-align: right;
+}
+.purpose{
+    color: #534C64;
+text-align: right;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: 45px; /* 187.5% */
+padding-top: 20px;
+}
+.unleash{
+    color: #534C64;
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 45px;
+}
+/* we are gamer section ends  */
+/* online games funny videos section starts  */
+
+.funny-intro, .funny-desc{
+    text-align: center;
+}
+.thumbnail-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.thumb-fig{
+    width: 23%;
+}
+.thumb{
+    width: 100%;
+    min-height: 400px;
+}
+.play{
+   text-align: center;
+   padding-top: 50%;
+   opacity: 0;
+    
+}
+.thumb:hover .play{
+    opacity: 1;
+    color: #FFF;
+}
+.thumb:hover{
+    background-color: hsla(255, 89%, 7%, 0.774);
+    background-blend-mode: darken;
+    cursor: pointer;
+}
+.thumb0{
+    background-image: url("./images/Rectangle\ 4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.thumb1{
+    background-image: url("./images/Rectangle\ 5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.thumb2{
+    background-image: url("./images/Rectangle\ 7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.thumb3{
+    background-image: url("./images/Rectangle\ 6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+/* online games funny videos section ends  */
 
 @media screen and (max-width:425px) {
 
     /* nav section responsive starts */
     .nav-menu-container,
     .link,
-    .about-dev {
+    .about-dev,.gamer-container,.thumbnail-container {
         flex-direction: column;
     }
 
@@ -218,8 +326,8 @@ body {
 
     .banner-container,
     .banner-image-container,
-    .goat-container {
-        width: 90%;
+    .goat-container,.gamer-image-container,.gamer-text-container {
+        width: 100%;
     }
 
     .goat-container {
@@ -247,5 +355,18 @@ body {
         padding: 1rem 2rem;
         border-radius: 2rem;
     }
+
     /* banner section responsive ends */
+    .section-intro, .section-description,.purpose,.unleash {
+        text-align: center;
+    }
+    .btn3{
+        margin-right:25px;
+    }
+    .thumb-fig{
+        width: 100%;
+    }
+    .fig{
+        margin: 0;
+    }
 }
