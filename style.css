@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    /* border: 2px solid salmon; */
+    border: 2px solid salmon;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 .section-intro {
-    /* text-align: right; */
+    text-align: right;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -33,7 +33,7 @@ body {
 
 .section-description {
     color: #534C64;
-    /* text-align: right; */
+    text-align: right;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -155,7 +155,7 @@ body {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
 }
 
@@ -203,7 +203,7 @@ body {
 }
 
 .banner-image-container,
-.gamer-image-container {
+.gamer-image-container{
     width: 50%;
 }
 
@@ -224,6 +224,7 @@ body {
     width: 50%;
     text-align: right;
 }
+
 .purpose{
     color: #534C64;
 text-align: right;
@@ -246,19 +247,19 @@ line-height: 45px;
 .funny-intro, .funny-desc{
     text-align: center;
 }
-.thumbnail-container {
+.thumbnail-container{
     margin: auto;
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .thumb-fig{
-    width: 23%;
+    width: 24%;
 }
 .thumb{
     width: 100%;
-    min-height: 400px;
+    height: 430px;
 }
 .play{
    text-align: center;
@@ -300,13 +301,52 @@ line-height: 45px;
     background-blend-mode: darken;
 }
 /* online games funny videos section ends  */
+/* ply instantly section starts */
+.main-play-instantly{
+    padding-top: 120px;
+    width: 100%;
+    min-height: 750px;
+    margin-bottom: 120px;
+}
+.play-instantly-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.play-instantly-text-container{
+    width: 50%;
+    padding-right: 15rem;
+}
+.play-instantly-image-container {
+    width: 50%;
+    position: relative;
+}
+.pi-img{
+    max-width: 634px;
+    max-height: 650px;
+    padding-left: 125px;
+    padding-bottom: 60px;
+}
+.overly-image-container{
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    margin: 3px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 0px;
+    z-index: 1;
+}
+/* play instantly section ends  */
 
 @media screen and (max-width:425px) {
 
     /* nav section responsive starts */
     .nav-menu-container,
     .link,
-    .about-dev,.gamer-container,.thumbnail-container {
+    .about-dev,.gamer-container,.thumbnail-container,.play-instantly-container {
         flex-direction: column;
     }
 
@@ -326,7 +366,7 @@ line-height: 45px;
 
     .banner-container,
     .banner-image-container,
-    .goat-container,.gamer-image-container,.gamer-text-container {
+    .goat-container,.gamer-image-container,.gamer-text-container ,.play-instantly-container{
         width: 100%;
     }
 
@@ -360,13 +400,16 @@ line-height: 45px;
     .section-intro, .section-description,.purpose,.unleash {
         text-align: center;
     }
-    .btn3{
-        margin-right:25px;
-    }
     .thumb-fig{
         width: 100%;
     }
     .fig{
         margin: 0;
+        text-align: center;
+        padding: 0px;
+    }
+    .play-instantly-text-container, .play-instantly-image-container{
+        width: 100%;
+        padding: 0px;
     }
 }
