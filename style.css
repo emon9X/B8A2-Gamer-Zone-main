@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
 }
 
 body {
@@ -306,7 +306,7 @@ line-height: 45px;
     padding-top: 120px;
     width: 100%;
     min-height: 750px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 .play-instantly-container {
     margin: auto;
@@ -324,23 +324,128 @@ line-height: 45px;
     position: relative;
 }
 .pi-img{
-    max-width: 634px;
-    max-height: 650px;
+    min-width: 80%;
+    height: 85%;
     padding-left: 125px;
     padding-bottom: 60px;
 }
 .overly-image-container{
-    width: 35%;
+    /* width: 35%; */
     height: 50%;
     position: absolute;
     margin: 3px;
     bottom: 0px;
-    left: 0px;
+    left: -9px;
     border-radius: 0px;
     z-index: 1;
 }
 /* play instantly section ends  */
+/* game category section starts */
+.category-container{
+    width: 100%;
+    min-height: 420px;
+   display: flex;
+   flex-wrap: wrap;
+   /* margin: 0 15rem 0 15rem; */
+   justify-content: center;
+   align-content: center;
+   gap: 5px;
+}
+.category{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 15rem; 
+height: 5rem;
+border-radius: 3.125rem;
+background: #FFF;
+}
+.category-container img{
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.category-container p{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 1.1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.category:hover{
+    border: 1px solid palevioletred;
+    cursor: pointer;
+}
+.category:hover p{
+    color: #F948B2;
+}
+footer {
+    width: 100%;
+    min-height: 650px;
+    background: #0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
+.footer-logo-name{
+    display: flex;
+    gap: 40px;
+}
+#f-g-text {
+    color:white;
+    font-size: 2.81rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.more-about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.more-about a{
+    text-decoration: none;
+    color: #FFF;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.footer-social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-left: 20px;
+}
+.terms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+.terms a{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+}
+.copiright{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
 @media screen and (max-width:425px) {
 
     /* nav section responsive starts */
@@ -395,6 +500,9 @@ line-height: 45px;
         padding: 1rem 2rem;
         border-radius: 2rem;
     }
+    .btn3{
+        margin-right: 70px;
+    }
 
     /* banner section responsive ends */
     .section-intro, .section-description,.purpose,.unleash {
@@ -412,4 +520,91 @@ line-height: 45px;
         width: 100%;
         padding: 0px;
     }
+    .footer-social-links, .more-about, .terms{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-left: 20px;
+    }
 }
+
+@media screen and (min-width:425px) and (max-width:1000px){
+     /* nav section responsive starts */
+     .nav-menu-container,
+     .link,
+     .about-dev,.gamer-container,.thumbnail-container,.play-instantly-container {
+         flex-direction: column;
+     }
+ 
+     .logo-name {
+         margin: 0px 95px 50px 0px;
+     }
+ 
+     .about-dev {
+         margin-bottom: 30px;
+     }
+ 
+     /* nav section responsive ends  */
+     /* banner section responsive starts */
+     .banner-container {
+         flex-direction: column-reverse;
+     }
+ 
+     .banner-container,
+     .banner-image-container,
+     .goat-container,.gamer-image-container,.gamer-text-container ,.play-instantly-container{
+         width: 100%;
+     }
+ 
+     .goat-container {
+         text-align: center;
+     }
+ 
+     .banner-image-container {
+         margin-bottom: 30px;
+     }
+ 
+     .button-container {
+         justify-content: center;
+     }
+ 
+     .goat-text {
+ 
+         font-size: 3rem;
+         font-style: normal;
+         font-weight: 800;
+         line-height: normal;
+     }
+ 
+     .btn1,
+     .btn2 {
+         padding: 1rem 2rem;
+         border-radius: 2rem;
+     }
+     .btn3{
+         margin-right: 70px;
+     }
+ 
+     /* banner section responsive ends */
+     .section-intro, .section-description,.purpose,.unleash {
+         text-align: center;
+     }
+     .thumb-fig{
+         width: 100%;
+     }
+     .fig{
+         margin: 0;
+         text-align: center;
+         padding: 0px;
+     }
+     .play-instantly-text-container, .play-instantly-image-container{
+         width: 100%;
+         padding: 0px;
+     }
+     .footer-social-links, .more-about, .terms{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 60px;
+         margin-left: 20px;
+     }
+ }
