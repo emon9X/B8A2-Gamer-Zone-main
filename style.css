@@ -147,6 +147,9 @@ body {
 .main-banner-container {
     width: 100%;
     min-height: 700px;
+    background-image: url('./images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
 
 }
 
@@ -162,9 +165,6 @@ body {
 .goat-container {
     width: 50%;
     text-align: left;
-    background-image: url('./images/Group\ 14.png');
-    background-repeat: no-repeat;
-    background-position: bottom left;
 }
 
 .play-text {
